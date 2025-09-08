@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Afreen Ansari — Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Afreen Ansari — Web Developer (WordPress, Shopify, HubSpot, PHP, JS)">
+  <meta property="og:title" content="Afreen Ansari — Developer Portfolio">
+  <meta property="og:description" content="Web Developer (WordPress, Shopify, HubSpot, PHP, JS)">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/og-image.png">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root{--bg:#0b0e14;--card:#0f1420;--muted:#8b9db0;--text:#e6edf3;--brand:#0ea5e9;--accent:#22c55e;--border:#1f2937}
+    *{box-sizing:border-box}html,body{height:100%}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;color:var(--text);background:linear-gradient(180deg,#0b0e14,#0b0e14 60%,#0f1420)}
+    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+    .logo{font-weight:700;letter-spacing:.4px}
+    nav a{margin-left:16px;color:var(--muted)}nav a:hover{color:var(--text)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:40px 0}
+    .hero h1{margin:0 0 12px;font-size:clamp(28px,3.6vw,48px);line-height:1.15}
+    .hero p{margin:0 0 20px;color:var(--muted)}
+    .tag{display:inline-flex;gap:8px;align-items:center;background:rgba(14,165,233,.12);border:1px solid rgba(14,165,233,.3);color:#9bd7ff;padding:6px 10px;border-radius:999px;font-size:13px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{border:1px solid var(--border);background:#111827;color:var(--text);padding:10px 14px;border-radius:12px}
+    .btn.primary{background:var(--brand);border-color:var(--brand);color:#001018;font-weight:700}
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid var(--border);border-radius:16px;padding:18px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .pill{display:inline-block;background:#0b1220;border:1px solid #1e293b;color:#cdd8e5;padding:4px 10px;border-radius:999px;font-size:12px;margin:4px 6px 0 0}
+    section{padding:14px 0 34px}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .section-title h2{margin:0;font-size:22px}
+    footer{padding:28px 0;color:var(--muted)}
+    .xp{display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:start;padding:14px 0;border-bottom:1px dashed #203040}
+    .xp:last-child{border-bottom:0}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:13px;color:#b8c7d9}
+    @media (max-width:860px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:1fr 1fr}.xp{grid-template-columns:1fr}}
+    @media (max-width:560px){.grid.cols-3{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Afreen Ansari",
+    "jobTitle": "Web Developer",
+    "url": "https://your-domain.com",
+    "sameAs": [
+      "https://github.com/youruser",
+      "https://www.linkedin.com/in/yourprofile/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Afreen Ansari</div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <span class="tag">Available for Freelance • India (IST)</span>
+        <h1>Building fast, clean websites in WordPress, Shopify & HubSpot.</h1>
+        <p>I’m a developer focusing on performant themes, custom plugins, and CMS integrations. 3+ years hands‑on with PHP, Liquid, JavaScript, ACF, and custom automations.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="/Afreen-Ansari-Resume.pdf" download>Download Resume</a>
+          <a class="btn" href="mailto:hello@your-domain.com">Email Me</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Highlights</h3>
+        <ul>
+          <li>✅ Migrated WP → HubSpot with near‑zero downtime</li>
+          <li>✅ Custom Elementor widgets & ACF blocks</li>
+          <li>✅ Shopify product/collection templates via Liquid + metafields</li>
+          <li>✅ Zapier + HubSpot + Calendly automations</li>
+        </ul>
+        <p class="mono">Stack: PHP • JS • WordPress • Shopify • HubSpot • MySQL • Git</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <a href="https://github.com/youruser" target="_blank" rel="noreferrer">More on GitHub →</a>
+      </div>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3>Art Portfolio (Elementor)</h3>
+          <p>Custom category filter without plugins. Dynamic sections with ACF.</p>
+          <span class="pill">WordPress</span><span class="pill">Elementor</span><span class="pill">ACF</span>
+          <p><a href="#" target="_blank" rel="noreferrer">Live</a> · <a href="#" target="_blank" rel="noreferrer">Code</a></p>
+        </article>
+        <article class="card">
+          <h3>Shopify Custom Product Layout</h3>
+          <p>Metafields‑driven PDP with variant logic and availability labels.</p>
+          <span class="pill">Shopify</span><span class="pill">Liquid</span>
+          <p><a href="#" target="_blank" rel="noreferrer">Live</a> · <a href="#" target="_blank" rel="noreferrer">Code</a></p>
+        </article>
+        <article class="card">
+          <h3>HubDB FAQ Manager</h3>
+          <p>Reusable FAQ sections with search, built on HubSpot HubDB.</p>
+          <span class="pill">HubSpot</span><span class="pill">HubDB</span>
+          <p><a href="#" target="_blank" rel="noreferrer">Live</a> · <a href="#" target="_blank" rel="noreferrer">Code</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="card">
+        <p>
+          <span class="pill">PHP</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">WordPress</span>
+          <span class="pill">Elementor</span>
+          <span class="pill">ACF</span>
+          <span class="pill">Shopify/Liquid</span>
+          <span class="pill">HubSpot CMS</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">Git & GitHub</span>
+          <span class="pill">Zapier</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="xp">
+        <div class="mono">2023 — Now</div>
+        <div>
+          <strong>Web Developer</strong> · Freelance
+          <p>Delivered 20+ features across WordPress, Shopify & HubSpot: custom themes, plugin dev, DNS cutovers, and marketing automations.</p>
+        </div>
+      </div>
+      <div class="xp">
+        <div class="mono">2022 — 2023</div>
+        <div>
+          <strong>Front‑end Dev</strong> · Agency
+          <p>Built responsive UI components, optimized Core Web Vitals, and improved Lighthouse scores 30%+ across client sites.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:hello@your-domain.com">hello@your-domain.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" rel="noreferrer">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a href="https://github.com/youruser" target="_blank" rel="noreferrer">github.com/youruser</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Afreen Ansari · Made with HTML/CSS. Hosted on GitHub Pages/Vercel.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
