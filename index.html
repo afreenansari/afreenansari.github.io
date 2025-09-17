@@ -1,175 +1,721 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Afreen Ansari — Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Afreen Ansari — Web Developer (WordPress, Shopify, HubSpot, PHP, JS)">
-  <meta property="og:title" content="Afreen Ansari — Developer Portfolio">
-  <meta property="og:description" content="Web Developer (WordPress, Shopify, HubSpot, PHP, JS)">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/og-image.png">
-  <meta name="theme-color" content="#0ea5e9">
-  <link rel="icon" href="/favicon.ico">
-  <style>
-    :root{--bg:#0b0e14;--card:#0f1420;--muted:#8b9db0;--text:#e6edf3;--brand:#0ea5e9;--accent:#22c55e;--border:#1f2937}
-    *{box-sizing:border-box}html,body{height:100%}
-    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;color:var(--text);background:linear-gradient(180deg,#0b0e14,#0b0e14 60%,#0f1420)}
-    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
-    .container{max-width:1080px;margin:0 auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
-    .logo{font-weight:700;letter-spacing:.4px}
-    nav a{margin-left:16px;color:var(--muted)}nav a:hover{color:var(--text)}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:40px 0}
-    .hero h1{margin:0 0 12px;font-size:clamp(28px,3.6vw,48px);line-height:1.15}
-    .hero p{margin:0 0 20px;color:var(--muted)}
-    .tag{display:inline-flex;gap:8px;align-items:center;background:rgba(14,165,233,.12);border:1px solid rgba(14,165,233,.3);color:#9bd7ff;padding:6px 10px;border-radius:999px;font-size:13px}
-    .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{border:1px solid var(--border);background:#111827;color:var(--text);padding:10px 14px;border-radius:12px}
-    .btn.primary{background:var(--brand);border-color:var(--brand);color:#001018;font-weight:700}
-    .grid{display:grid;gap:16px}
-    .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid var(--border);border-radius:16px;padding:18px}
-    .card h3{margin:0 0 6px;font-size:18px}
-    .pill{display:inline-block;background:#0b1220;border:1px solid #1e293b;color:#cdd8e5;padding:4px 10px;border-radius:999px;font-size:12px;margin:4px 6px 0 0}
-    section{padding:14px 0 34px}
-    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-    .section-title h2{margin:0;font-size:22px}
-    footer{padding:28px 0;color:var(--muted)}
-    .xp{display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:start;padding:14px 0;border-bottom:1px dashed #203040}
-    .xp:last-child{border-bottom:0}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:13px;color:#b8c7d9}
-    @media (max-width:860px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:1fr 1fr}.xp{grid-template-columns:1fr}}
-    @media (max-width:560px){.grid.cols-3{grid-template-columns:1fr}}
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Afreen Ansari",
-    "jobTitle": "Web Developer",
-    "url": "https://your-domain.com",
-    "sameAs": [
-      "https://github.com/afreenansari",
-      "https://www.linkedin.com/in/yourprofile/"
-    ]
-  }
-  </script>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="logo">Afreen Ansari</div>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div>
-        <span class="tag">Available for Freelance • India (IST)</span>
-        <h1>Building fast, clean websites in WordPress, Shopify & HubSpot.</h1>
-        <p>I’m a developer focusing on performant themes, custom plugins, and CMS integrations. 3+ years hands‑on with PHP, Liquid, JavaScript, ACF, and custom automations.</p>
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="/Afreen-Ansari-Resume.pdf" download>Download Resume</a>
-          <a class="btn" href="mailto:afreen.linuxbean@gmail.com">Email Me</a>
-        </div>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      <meta name="description" content=""/>
+      <meta name="author" content="" />
+      <title>Portfolio</title>
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+      <link rel="stylesheet" href="assets/css/fontawesome.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/owl.css" />
+      <link rel="stylesheet" href="assets/css/lightbox.css" />
+   </head>
+   <body>
+      <div id="page-wraper">
+         <div class="responsive-nav">
+            <i class="fa fa-bars" id="menu-toggle"></i>
+            <div id="menu" class="menu">
+               <i class="fa fa-times" id="menu-close"></i>
+               <div class="container">
+                  <div class="image">
+                     <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+                  </div>
+                  <div class="author-content">
+                     <h4>Afreen Ansari</h4>
+                     <span><span style="    font-size: 22px;
+                        font-weight: 700;
+                        color: #05cef2;">I'm</span> Web <span style="    font-size: 22px;
+                        font-weight: 700;
+                        color: #05cef2;"  class="line-dec"> Developer</span></span>
+                  </div>
+                  <nav class="main-nav" role="navigation">
+                     <ul class="main-menu">
+                        <li><a href="#section1">About Me</a></li>
+                        <li><a href="#section2">What I’m good at</a></li>
+                        <li><a href="#section3">My Work</a></li>
+                        <li><a href="#section4">Contact Me</a></li>
+                     </ul>
+                  </nav>
+                  <div class="social-network">
+                     <ul class="soial-icons">
+                        <li>
+                           <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank"><i class="fa fa-facebook"></i
+                              ></a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section class="section about-me" data-section="section1">
+            <div class="container">
+               <div class="section-heading">
+                  <h2>About Me</h2>
+                  <div class="line-dec"></div>
+                  <span
+                     >Hello, I'm Afreen Ansari, a professional WordPress developer with [3] years of experience creating dynamic and responsive websites. I'm a passionate and creative wordpress developer dedicated to crafting beautiful and functional digital experiences. With a keen eye for aesthetics and a strong understanding of user experience, I transform ideas into visually stunning and user-friendly websites that leave a lasting impression.</span
+                     >
+                  <span style="color: #06c1e3;
+                     font-weight: 600;
+                     letter-spacing: 0.5px;
+                     display: inline-block;">I also worked on Divi builder, Shopify, Big commerce and Hubspot.</span>
+               </div>
+               <div class="left-image-post">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="left-image">
+                           <img src="assets/images/webd.png" alt="" / class="img-fluid">
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="right-text">
+                           <h4>What I Do</h4>
+                           <p>
+                              My journey in web development has been driven by a deep fascination for the ever-evolving world of design and technology. I specialize in creating responsive and engaging WordPress websites that not only look great on any device but also provide a seamless browsing experience. Whether it's developing custom themes, crafting functional plugins, or optimizing sites for performance, I'm committed to delivering excellence in every project.
+                           </p>
+                           <h5>For my resume please click here</h5>
+                           <a href="assets/images/resume.pdf" download target="_blank" class="btn-resume">📥 My Resume</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section my-services" data-section="section2">
+            <div class="container">
+               <div class="section-heading">
+                  <h2>What I’m good at?</h2>
+                  <div class="line-dec"></div>
+                  <span
+                     >By focusing on e-commerce development, this version highlights your expertise in creating custom WordPress and WooCommerce solutions, emphasizing the impact of your work on clients’ online sales and user engagement. Each project is a chance to craft a unique narrative, blending colors, typography, and layout to resonate with the target audience.</span
+                     >
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="service-item">
+                        <div class="first-service-icon service-icon"></div>
+                        <img src="assets/images/ic1.png" alt="" / class="img-fluid">
+                        <h4>Flexible To Learn</h4>
+                        <p>
+                           I specialize in developing responsive and engaging web applications that not only look great on any device but also provide a seamless user experience. Whether it's building elegant landing pages, dynamic single-page applications, or complex web platforms, I'm committed to delivering excellence in every project.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="service-item">
+                        <div class="second-service-icon service-icon"></div>
+                        <img src="assets/images/ic2.png" alt="" / class="img-fluid">
+                        <h4>Creative Ideas</h4>
+                        <p>
+                           In the world of web development, creativity isn't just a buzzword; it's the driving force behind unforgettable digital experiences. Every pixel, every interaction, and every line of code is an opportunity to infuse creativity and innovation into a project.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="service-item">
+                        <div class="third-service-icon service-icon"></div>
+                        <img src="assets/images/ic3.png" alt="" / class="img-fluid">
+                        <h4>Easy Customize</h4>
+                        <p>
+                           One size does not fit all. That's why I'm passionate about making every project easy to customize, ensuring that your unique vision takes center stage. I specialize in creating responsive and adaptable websites that cater to the specific needs of each client.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="service-item">
+                        <div class="fourth-service-icon service-icon"></div>
+                        <img src="assets/images/ic4.png" alt="" / class="img-fluid">
+                        <h4>User Friendly</h4>
+                        <p>
+                           I believe in transparency and empowering my clients. That's why I provide clear and concise documentation to guide you through the customization process. As a web developer, my goal is to create responsive and adaptable websites that not only meet your unique needs but also ensure you have the tools and knowledge to manage and customize your site with confidence.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section my-work" data-section="section3">
+            <div class="container">
+               <div class="section-heading">
+                  <h2>My Work</h2>
+                  <div class="line-dec"></div>
+                  <span>Here are some highlights from my portfolio</span>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://www.pharmacyonthepark.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/1.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://lifelamp.net/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/2.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://arizonamedlaser.com" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/3.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://neuropsychcps.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/4.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://www.jmpforming.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/5.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://www.madjarian.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/6.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <h2 class="heading_other">Divi builder</h2>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://therolloutcrew.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/1.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <h2 class="heading_other">Elementor</h2>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://decoballoonshop.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/2.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://www.funkyunclemustard.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/3.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://decoballoonshop.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/4.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <h2 class="heading_other">Wp-Bakery builder</h2>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://lifesportcoaching.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/5.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <h2 class="heading_other">Shopify</h2>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://store.mcci.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/6.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://sandbaggy.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/1.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://www.craftandcrumb.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/2.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://www.diamondbrandgear.com
+                           " target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/3.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://shop.mba-asap.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/4.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://murphymaude.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/5.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://freedom-scooters.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/6.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <h2 class="heading_other">Big commerce website</h2>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://commercetech.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/1.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://eeezsolutions.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/2.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <h2 class="heading_other">Hubspot</h2>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://www.cetdigit.com/" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/3.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="isotope-item" data-type="nature">
+                        <a href="https://grangraegroup.com" target="_blank">
+                           <figure class="snip1321">
+                              <img
+                                 src="assets/images/4.png"
+                                 alt="sq-sample26"
+                                 />
+                              <figcaption>
+                                 <i class="fa fa-search"></i
+                                    >
+                                 <h4>Click Here</h4>
+                              </figcaption>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section contact-me" data-section="section4">
+            <div class="container">
+               <div class="section-heading">
+                  <h2>Contact Me</h2>
+                  <div class="line-dec"></div>
+               </div>
+               <div class="row">
+                  <div class="right-content">
+                     <div class="container">
+                        <form id="contact" action="" method="post">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <fieldset>
+                                    <input
+                                       name="name"
+                                       type="text"
+                                       class="form-control"
+                                       id="name"
+                                       placeholder="Your name..."
+                                       required=""
+                                       />
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-6">
+                                 <fieldset>
+                                    <input
+                                       name="email"
+                                       type="text"
+                                       class="form-control"
+                                       id="email"
+                                       placeholder="Your email..."
+                                       required=""
+                                       />
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-12">
+                                 <fieldset>
+                                    <input
+                                       name="subject"
+                                       type="text"
+                                       class="form-control"
+                                       id="subject"
+                                       placeholder="Subject..."
+                                       required=""
+                                       />
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-12">
+                                 <fieldset>
+                                    <textarea
+                                       name="message"
+                                       rows="6"
+                                       class="form-control"
+                                       id="message"
+                                       placeholder="Write Something"
+                                       required=""
+                                       ></textarea>
+                                 </fieldset>
+                              </div>
+                              <div class="col-md-12">
+                                 <fieldset>
+                                    <button type="submit" id="form-submit" class="button">
+                                    Send Message
+                                    </button>
+                                 </fieldset>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="contact-detail">
+                        <h2><i class="fa fa-phone" aria-hidden="true"></i>+91 9876543210</h2>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="contact-detail">
+                        <h2><i class="fa fa-envelope" aria-hidden="true"></i>abc@gmail.com</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
       </div>
-      <div class="card">
-        <h3>Highlights</h3>
-        <ul>
-          <li>✅ Migrated WP → HubSpot with near‑zero downtime</li>
-          <li>✅ Custom Elementor widgets & ACF blocks</li>
-          <li>✅ Shopify product/collection templates via Liquid + metafields</li>
-          <li>✅ Zapier + HubSpot + Calendly automations</li>
-        </ul>
-        <p class="mono">Stack: PHP • JS • WordPress • Shopify • HubSpot • MySQL • Git</p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="section-title">
-        <h2>Featured Projects</h2>
-        <a href="https://github.com/afreenansari" target="_blank" rel="noreferrer">More on GitHub →</a>
-      </div>
-      <div class="grid cols-3">
-        <article class="card">
-          <h3>Art Portfolio (Elementor)</h3>
-          <p>Custom category filter without plugins. Dynamic sections with ACF.</p>
-          <span class="pill">WordPress</span><span class="pill">Elementor</span><span class="pill">ACF</span>
-          <p><a href="#" target="_blank" rel="noreferrer">Live</a> · <a href="#" target="_blank" rel="noreferrer">Code</a></p>
-        </article>
-        <article class="card">
-          <h3>Shopify Custom Product Layout</h3>
-          <p>Metafields‑driven PDP with variant logic and availability labels.</p>
-          <span class="pill">Shopify</span><span class="pill">Liquid</span>
-          <p><a href="#" target="_blank" rel="noreferrer">Live</a> · <a href="#" target="_blank" rel="noreferrer">Code</a></p>
-        </article>
-        <article class="card">
-          <h3>HubDB FAQ Manager</h3>
-          <p>Reusable FAQ sections with search, built on HubSpot HubDB.</p>
-          <span class="pill">HubSpot</span><span class="pill">HubDB</span>
-          <p><a href="#" target="_blank" rel="noreferrer">Live</a> · <a href="#" target="_blank" rel="noreferrer">Code</a></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2 class="section-title">Skills</h2>
-      <div class="card">
-        <p>
-          <span class="pill">PHP</span>
-          <span class="pill">JavaScript</span>
-          <span class="pill">WordPress</span>
-          <span class="pill">Elementor</span>
-          <span class="pill">ACF</span>
-          <span class="pill">Shopify/Liquid</span>
-          <span class="pill">HubSpot CMS</span>
-          <span class="pill">MySQL</span>
-          <span class="pill">Git & GitHub</span>
-          <span class="pill">Zapier</span>
-        </p>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="xp">
-        <div class="mono">2023 — Now</div>
-        <div>
-          <strong>Web Developer</strong> · Freelance
-          <p>Delivered 20+ features across WordPress, Shopify & HubSpot: custom themes, plugin dev, DNS cutovers, and marketing automations.</p>
-        </div>
-      </div>
-      <div class="xp">
-        <div class="mono">2022 — 2023</div>
-        <div>
-          <strong>Front‑end Dev</strong> · Agency
-          <p>Built responsive UI components, optimized Core Web Vitals, and improved Lighthouse scores 30%+ across client sites.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="card">
-        <p>Email: <a href="mailto:afreen.linuxbean@gmail.com">afreen.linuxbean@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" rel="noreferrer">linkedin.com/in/yourprofile</a></p>
-        <p>GitHub: <a href="https://github.com/afreenansari" target="_blank" rel="noreferrer">github.com/afreenansari</a></p>
-      </div>
-    </section>
-
-    <footer>
-      © <span id="y"></span> Afreen Ansari · Made with HTML/CSS. Hosted on GitHub Pages/Vercel.
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear()
-  </script>
-</body>
+      <!-- Scripts -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/isotope.min.js"></script>
+      <script src="assets/js/owl-carousel.js"></script>
+      <script src="assets/js/lightbox.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script>
+         //according to loftblog tut
+         $(".main-menu li:first").addClass("active");
+         
+         var showSection = function showSection(section, isAnimate) {
+           var direction = section.replace(/#/, ""),
+             reqSection = $(".section").filter(
+               '[data-section="' + direction + '"]'
+             ),
+             reqSectionPos = reqSection.offset().top - 0;
+         
+           if (isAnimate) {
+             $("body, html").animate(
+               {
+                 scrollTop: reqSectionPos
+               },
+               800
+             );
+           } else {
+             $("body, html").scrollTop(reqSectionPos);
+           }
+         };
+         
+         var checkSection = function checkSection() {
+           $(".section").each(function() {
+             var $this = $(this),
+               topEdge = $this.offset().top - 80,
+               bottomEdge = topEdge + $this.height(),
+               wScroll = $(window).scrollTop();
+             if (topEdge < wScroll && bottomEdge > wScroll) {
+               var currentId = $this.data("section"),
+                 reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+               reqLink
+                 .closest("li")
+                 .addClass("active")
+                 .siblings()
+                 .removeClass("active");
+             }
+           });
+         };
+         
+         $(".main-menu").on("click", "a", function(e) {
+           e.preventDefault();
+           showSection($(this).attr("href"), true);
+         });
+         
+         $(window).scroll(function() {
+           checkSection();
+         });
+      </script>
+   </body>
 </html>
